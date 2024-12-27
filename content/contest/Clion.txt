@@ -1,0 +1,4 @@
+-c "cd \"$(echo '$FileDirRelativeToProjectRoot$' | sed -e 's/\\/\//g' -e 's/://')\" && g++ -std=c++17 -Wshadow -Wall
+-o $FileNameWithoutExtension$.out $FileName$ -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG -Dmlocal
+ && ./$FileNameWithoutExtension$.out"
+$ProjectFileDir$
